@@ -54,6 +54,9 @@ ion-icon {
     justify-content: space-between;
 }
 
+input[type="number"] {
+    width: 10rem;
+}
 
 #submit {
     width: 7rem;
