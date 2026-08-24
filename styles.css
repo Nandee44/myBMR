@@ -64,4 +64,7 @@ input[type="number"] {
     margin-top: 1rem;
     padding: 0.2rem;
     font-family: "Outfit", sans-serif;
+    border-radius: 0.4rem;
+    border: 1.5px solid rgb(212, 199, 174) ;
+    background-color: rgb(240, 237, 232);
 }
