@@ -14,20 +14,29 @@ function displayBmr(bmr) {
     result.textContent = "Your BMR is " + bmr + " calories per day"
 }
 
+function checkInput() {
+    let errors = [];
+}
+
+let age;
+let height;
+let weight;
+let gender;
 
 // after submitting form
 document.getElementById("form").addEventListener("submit", function(event) {
     console.log("hi");
     event.preventDefault();
 
-    const age = parseFloat(document.getElementById("age").value);
-    const height = parseFloat(document.getElementById("height").value);
-    const weight = parseFloat(document.getElementById("weight").value);
-    const gender = document.querySelector('input[name="gender"]:checked').value;
+    
+
+    age = parseFloat(document.getElementById("age").value);
+    height = parseFloat(document.getElementById("height").value);
+    weight = parseFloat(document.getElementById("weight").value);
+    checkInput();
+    gender = document.querySelector('input[name="gender"]:checked').value;
 
     console.log(age, weight, height);
-
-    // need to handle missing or incorrect input
 
     let bmr = calculateBmr(age, height, weight, gender);
     console.log(bmr);
