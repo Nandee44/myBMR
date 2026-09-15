@@ -14,9 +14,17 @@ function displayBmr(bmr) {
     result.textContent = "Your BMR is " + bmr + " calories per day"
 }
 
-function checkInput() {
-    let errors = [];
+let errors = [];
+
+function checkCorrect(id, n, mn, mx) {
+    if (Number.isNaN(n)) {
+        errors.push(id + " is required")
+    } else if (n >= mx || n <= mn) {
+        errors.push(id + " should be between " + mn + " and " + mx)
+    }
 }
+
+//need to create function displaying error messages then see how to reset when resubmitting
 
 let age;
 let height;
