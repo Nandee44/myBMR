@@ -68,3 +68,11 @@ input[type="number"] {
     border: 1.5px solid rgb(212, 199, 174) ;
     background-color: rgb(240, 237, 232);
 }
+
+.errormsg {
+    margin: 0.2rem;
+    color: rgb(206, 93, 93);
+}
+#error {
+    text-align: center;
+}
