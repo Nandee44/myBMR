@@ -6,6 +6,7 @@ body {
     padding: 0;
     background-color: rgb(249, 249, 246);
     font-family: "Outfit", sans-serif;
+    display: grid;
 }
 
 #top {
@@ -75,4 +76,13 @@ input[type="number"] {
 }
 #error {
     text-align: center;
+}
+
+footer {
+    text-align: center;
+    color: rgb(186, 171, 155);
+    font-size: 0.7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
