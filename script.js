@@ -34,6 +34,7 @@ let gender;
 document.getElementById("form").addEventListener("submit", function(event) {
     console.log("hi");
     errors = [];
+    document.getElementById("result").textContent = "";
     document.getElementById("error").innerHTML = ``;
     event.preventDefault();
 
