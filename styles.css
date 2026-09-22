@@ -60,13 +60,17 @@ ion-icon {
 }
 
 .inp {
-    width: 15rem;
+    width: 17rem;
     display: flex;
     justify-content: space-between;
 }
 
 input[type="number"] {
     width: 10rem;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none;
 }
 
 #submit {
@@ -84,6 +88,20 @@ input[type="number"] {
 
     cursor: pointer;
     box-shadow: 0rem 0.2rem rgb(71, 72, 123);
+    transition: 0.2s all linear;
+}
+
+#submit:hover {
+    background-color: rgb(245, 229, 211);
+    position: relative;
+    top: 0rem;
+    transition: 0.2 all linear;
+}
+
+#submit:active {
+    position: relative;
+    top: 0.2rem;
+    box-shadow: 0rem 0rem rgb(71, 72, 123);
 }
 
 .box {
